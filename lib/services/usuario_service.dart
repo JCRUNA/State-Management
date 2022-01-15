@@ -30,6 +30,11 @@ class _UsuarioService {
     //cuando cambio la edad debo avisarle al stremcontroller para que cargue el usuario
     this._usuarioStreamController.add(this._usuario!);
   }
+
+//creo metodo para que se cierre el stream para prevenir fugas de memoria y que no queden en memoria las suscripciones.
+  dispose() {
+    this._usuarioStreamController.close();
+  }
 }
 
 final usuarioService =
