@@ -15,3 +15,12 @@ La idea de la app es que cuando vayamos a la pagina 2 donde se muestras los 3 bo
  solo un text diciendo que no se establecio ningun usuario.
 
  Voy a usar git para crear diferentes ramas a partir de la app base. De esta forma por cada gestor de estado voy a tener una branch,
+
+ Caso singleton:
+  1-creo carpeta services y creo dentro archivo usuario_service: de aqui controlo la forma en que establezco la informacion del usuario (ejemplo: si el
+  usuario existe, cambiar la edad, crear usuario) y  tambien creo una UNICA INSTANCIA privada de Usuario Service. Esta instancia la voy a usar en toda mi
+  aplicacion. Ver archiv usuario_service
+  2-si bien es util el singleton ya que nos permite llamar a la clase desde cualquier lugar la aplicacion, no vemos los cambios reflejados en pantalla
+  ya que no se redibujan los widgets.
+  3 Solucion: usar streams (flujo de informacion) para decirle a los widget que estan escuchando esa informacion, ey la informacion cambio! redibujate!!
+  
