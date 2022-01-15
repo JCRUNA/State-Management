@@ -1,0 +1,17 @@
+Objetivo
+
+Probar diferentes gestores de estado.
+Entiendase por estados a por ej que usuario esta logueado, que productos estan en el carrito de compras, que procedimientos
+hizo el usuario
+
+Creo carpeta modelos y dentro un archivo llamado usuario donde defino la clase usuario.
+
+La idea de la app es que cuando vayamos a la pagina 2 donde se muestras los 3 botones entonces:
+ cuando presionemos en establecer usuario y volvamos a la pagina 1 entonces nos muestre la info del usuario (nombre, edad y profesiones)
+ cuando presionemos en cambiar edad, se cambie la edad y cuando volvamos a la pagina 1 vemos la nueva edad reflejada.
+ cuando presionemos anadir profesiones , se agregue la nueva profesion y cuando volvamos a la pagina 1 se vea la/las profesiones actualizadas.
+
+ En caso que en la pagina 2 no presionemos ninguno de estos 3 botones, entonces no se creara ningun usuario, por ende cuando vayamos a la pagina 1 veremos
+ solo un text diciendo que no se establecio ningun usuario.
+
+ Voy a usar git para crear diferentes ramas a partir de la app base. De esta forma por cada gestor de estado voy a tener una branch,
