@@ -15,3 +15,7 @@ La idea de la app es que cuando vayamos a la pagina 2 donde se muestras los 3 bo
  solo un text diciendo que no se establecio ningun usuario.
 
  Voy a usar git para crear diferentes ramas a partir de la app base. De esta forma por cada gestor de estado voy a tener una branch,
+
+ Usaremos provider como maneador de estados. Necesitamos una clase  o varias que se encargue de tener la informacion centralizada.
+ Provider al igual que Singleton tiene una unica instancia de la clase en toda mi app. Se trata de colocar en el nivel mas arriba para
+ que toda mi app tenga acceso.
