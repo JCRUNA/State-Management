@@ -15,3 +15,15 @@ La idea de la app es que cuando vayamos a la pagina 2 donde se muestras los 3 bo
  solo un text diciendo que no se establecio ningun usuario.
 
  Voy a usar git para crear diferentes ramas a partir de la app base. De esta forma por cada gestor de estado voy a tener una branch,
+
+ Cubbit es un hibrido entre Provider y Bloc
+ Trabaja con streams.
+ Los estados son inmutables.
+ - creo carpeta bloc y dentro creo carpeta usuario.
+ -dentro de usuario creo 2 archivos. usuario_cubit(gestiona el estado) y usuario_State que engloba todos los estados que la app va a tener.
+ Estos 2 archivos estan relacionados ya que el usuario_cubit va a manejar el usuario_State.
+ Para simplificar las importaciones utilizaremos el part y part of. Donde el part lo definimos en el archivo principal (usuario_Cubit) y el part of
+ en el archivo secundario (usuario_State)
+
+ Igual que en el provider en el main dart envuelvo mi MaterialApp con el widget MultiBlocProvider. De esta manera mi cubit va a establecer
+ disponible en toda mi app.
