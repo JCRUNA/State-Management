@@ -15,3 +15,19 @@ La idea de la app es que cuando vayamos a la pagina 2 donde se muestras los 3 bo
  solo un text diciendo que no se establecio ningun usuario.
 
  Voy a usar git para crear diferentes ramas a partir de la app base. De esta forma por cada gestor de estado voy a tener una branch,
+
+ bloc
+ formado por 3 archivos
+ -bloc: tiene la informacion del estado actual y procesa los eventos.
+ -event: son acciones que se van a disparar y que el bloc las vas a recibir para asi cambiar el state
+ -state: como se encuentra el estado de la aplicacion (esta activo el usuario, monto del carrito de compras, usuarios logueados , etc)
+
+
+ Por ejemplo, cuando yo toque el boton establer usuario voy a disparar el evento activarUser a la hora de crear 
+ ese evento tiene que proveerme el usuario y ese usuario va a terminar pasando por aquí.
+Va a recibirse el evento que va a ser ActivarUser. 
+Aquí voy a tener cuál es el usuario y basado en esa información  puedo emitir un nuevo estado.
+Ese nuevo estado tiene que tener estas propiedades, tiene que ser extendido de este objeto.
+
+El bloc al igual que el cubit  y el provider debemos colocarlo en la parte mas alta de nuestra app asi cualquier widget puede acceder
+Usamos el MultiBlocProvider
