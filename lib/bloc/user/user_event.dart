@@ -18,16 +18,19 @@ class ActivateUser extends UserEvent {
   ActivateUser(this.User);
 }
 
+///evente para cambiar la edad
 class ChangeUserAgeEvent extends UserEvent {
   final int age;
 
   ChangeUserAgeEvent(this.age);
 }
 
+///evento para agregar profesion
 class AddProfessionEvent extends UserEvent {
   final String profesion;
 
   AddProfessionEvent(this.profesion);
 }
 
+///evento para borrar usuario
 class DeleteUser extends UserEvent {}
