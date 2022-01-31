@@ -1,6 +1,7 @@
 # gestordeestados
 
-A new Flutter project.
+I build a very simple application using different state managers. (Singleton - Provider - Cubit - Bloc)
+This way we can see the strengths and weaknesses of each one.
 
 ## Getting Started
 
